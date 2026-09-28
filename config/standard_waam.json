@@ -1,0 +1,433 @@
+{
+  "version": 4,
+  "standard": [
+    "ISO 6983",
+    "AWS D20.1",
+    "DIN EN ISO 17660-1"
+  ],
+  "units": "mm",
+  "wcs": "G54",
+  "metadata": {
+    "config_name": "WAAM - Gantry 500A reference cell",
+    "created": "2025-10-24",
+    "author": "WAAM Process Team",
+    "notes": [
+      "Consolidated profile derived from router baseline, WAAM-specific tuning, and extended process controls.",
+      "All keys required by existing planners/snippet renderers are preserved."
+    ]
+  },
+  "material": {
+    "substrate": "Mild Steel S355",
+    "wire": "ER70S-6",
+    "wire_diameter_mm": 1.2,
+    "density_g_cm3": 7.85,
+    "preheat_temp_c": 120,
+    "interpass_temp_max_c": 250,
+    "gas": "Ar + 2% CO2"
+  },
+  "machine": {
+    "name": "WAAM-Gantry-500A",
+    "controller": "linuxcnc",
+    "axes": [
+      "X",
+      "Y",
+      "Z",
+      "A",
+      "C"
+    ],
+    "travel": {
+      "x": 2000,
+      "y": 1200,
+      "z": 1200
+    },
+    "max_feed_xy": 4500,
+    "max_feed_z": 2000,
+    "max_wire_feed_mm_min": 4800,
+    "max_deposition_rate_kg_hr": 6.5,
+    "arc_mode": "CMT",
+    "cooling": {
+      "type": "forced_air",
+      "fan_speed_pct": 100,
+      "interpass_monitoring": true
+    },
+    "torch": {
+      "process": "CMT",
+      "power_source": "Fronius TPS 500i",
+      "max_current_a": 320,
+      "max_voltage_v": 32,
+      "shield_gas": "Ar/CO2 98/2",
+      "gas_flow_l_min": 15,
+      "ctwd_mm": 15
+    },
+    "sensors": {
+      "thermal_imaging": true,
+      "laser_profile": true,
+      "pyrometer": true
+    },
+    "notes": "Representative gantry-style WAAM cell for medium-gauge steel deposition."
+  },
+  "process": {
+    "deposition": {
+      "strategy": "slice_first_hatch_only",
+      "layer_height_mm": 1.5,
+      "bead_width_mm": 4.0,
+      "overlap_pct": 55.0,
+      "travel_speed_mm_min": 316.0,
+      "wire_feed_mm_min": 3796.0,
+      "arc_current_a": 240,
+      "arc_voltage_v": 26,
+      "energy_input_kj_mm": 0.78,
+      "start_end_overlap_mm": 5.0,
+      "ramp_in_mm": 3.0,
+      "ramp_out_mm": 3.0,
+      "dwell_per_layer_s": 1.5,
+      "weave": {
+        "enabled": true,
+        "pattern": "sinusoidal",
+        "amplitude_mm": 2.5,
+        "frequency_hz": 2.0,
+        "dwell_at_edges_ms": 100
+      },
+      "support_trim": {
+        "enabled": false,
+        "radius_scale": 1.0
+      },
+      "wire_diameter_mm": 0.5,
+      "voltage_v": 0.0,
+      "current_a": 0.0,
+      "torch_config": "Vertical"
+    },
+    "finishing": {
+      "layer_height_mm": 1.0,
+      "bead_width_mm": 4.5,
+      "overlap_pct": 40,
+      "travel_speed_mm_min": 420,
+      "wire_feed_mm_min": 2800,
+      "arc_current_a": 180,
+      "arc_voltage_v": 24,
+      "passes": 1
+    },
+    "interpass": {
+      "cooling": "forced_air",
+      "target_temp_c": 210,
+      "max_temp_c": 250,
+      "min_temp_c": 150,
+      "max_dwell_s": 45,
+      "temperature_monitoring": "pyrometer",
+      "inspection": [
+        "visual",
+        "laser_scan"
+      ],
+      "adaptive_dwell": true
+    },
+    "path": {
+      "planner_mode": "slice_first",
+      "infill_strategy": "hatch",
+      "deposition_pattern": "hatch_only",
+      "hatch_angle_deg": 0.0,
+      "hatch_angle_step_deg": 0.0,
+      "start_strategy": "nearest_start",
+      "end_strategy": "layer_complete",
+      "direction": "climb",
+      "lead_in_type": "arc",
+      "lead_in_radius_mm": 5.0,
+      "lead_out_type": "arc",
+      "lead_out_radius_mm": 5.0,
+      "corner_strategy": "smooth_arc",
+      "min_corner_radius_mm": 3.0,
+      "topology_sensitive": {
+        "enabled": false,
+        "void_lookahead_layers": 2,
+        "thin_wall_area_ratio_max": 0.45,
+        "suppress_infill_on_transition": true,
+        "thin_wall_detection": {
+          "enabled": true,
+          "use_mesh_signal": true,
+          "sample_step_mm": 1.5,
+          "max_samples_per_region": 96,
+          "single_track_max_width_beads": 1.35,
+          "dual_track_max_width_beads": 2.35
+        },
+        "hotspots": {
+          "corner_angle_deg": 45.0,
+          "corner_clearance_mm": 8.0,
+          "junction_clearance_mm": 10.0,
+          "min_neck_width_beads": 2.0,
+          "suppress_infill_near_hotspots": true
+        },
+        "continuity": {
+          "enabled": false,
+          "rotate_closed_paths": true,
+          "allow_reverse_open_paths": true,
+          "restart_penalty_mm": 20.0,
+          "heading_change_penalty_mm": 4.0,
+          "region_switch_penalty_mm": 3.0,
+          "max_chain_gap_mm": 0.8,
+          "emit_chains": false,
+          "allowed_roles": [
+            "INFILL"
+          ],
+          "allowed_region_modes": [
+            "bulk_fill"
+          ],
+          "disallow_hotspot_kinds": [
+            "corner",
+            "junction"
+          ],
+          "max_chain_heading_delta_deg": 60.0,
+          "max_paths_per_chain": 12,
+          "coincident_endpoint_tol_mm": 0.05
+        }
+      }
+    },
+    "auto_scale": {
+      "enabled": false,
+      "driver": "max_span",
+      "span_min_mm": 50.0,
+      "span_max_mm": 300.0,
+      "deposition": {
+        "ranges": {
+          "bead_width_mm": {
+            "at_min_span": 4.0,
+            "at_max_span": 8.0
+          },
+          "layer_height_mm": {
+            "at_min_span": 1.2,
+            "at_max_span": 2.2
+          },
+          "travel_speed_mm_min": {
+            "at_min_span": 260.0,
+            "at_max_span": 420.0
+          },
+          "wire_feed_mm_min": {
+            "at_min_span": 3200.0,
+            "at_max_span": 4600.0
+          },
+          "overlap_pct": {
+            "at_min_span": 35.0,
+            "at_max_span": 25.0
+          },
+          "ramp_in_mm": {
+            "at_min_span": 2.0,
+            "at_max_span": 6.0
+          },
+          "ramp_out_mm": {
+            "at_min_span": 2.0,
+            "at_max_span": 6.0
+          }
+        }
+      },
+      "path": {
+        "ranges": {
+          "lead_in_radius_mm": {
+            "at_min_span": 4.0,
+            "at_max_span": 8.0
+          },
+          "lead_out_radius_mm": {
+            "at_min_span": 4.0,
+            "at_max_span": 8.0
+          },
+          "min_corner_radius_mm": {
+            "at_min_span": 2.0,
+            "at_max_span": 5.0
+          }
+        }
+      }
+    },
+    "thermal": {
+      "max_interpass_temp_c": 149.0
+    }
+  },
+  "quality": {
+    "surface_finish": "as_deposited",
+    "dimensional_tolerance_mm": 0.5,
+    "layer_measurement": "laser_profilometer",
+    "defect_detection": [
+      "porosity_scan",
+      "thermal_imaging"
+    ],
+    "acceptance_criteria": "AWS D20.1"
+  },
+  "safety": {
+    "pre_run_checks": [
+      "gas_pressure",
+      "wire_tension",
+      "cooling_system",
+      "emergency_stop"
+    ],
+    "emergency_stop_behavior": "retract_torch",
+    "arc_shield_required": true,
+    "ventilation_required": true,
+    "min_operator_distance_m": 2.0
+  },
+  "heights": {
+    "safe": 50.0,
+    "clearance": 30.0,
+    "rapidZ": 5.0,
+    "topZ": 0.0,
+    "arc_start_clearance": 3.0,
+    "start_strategy": "inside_out",
+    "substrate_offset": 0.0
+  },
+  "defaults": {
+    "roughing": {
+      "stepover_pct": 0.75,
+      "stepdown": 1.6,
+      "stock_to_leave": 0.0,
+      "feed_xy": 320.0,
+      "feed_z": 200.0,
+      "rpm_cap": 0.0
+    },
+    "finishing": {
+      "stepover_pct": 0.35,
+      "stepdown": 1.0,
+      "stock_to_leave": 0.0,
+      "feed_xy": 420.0,
+      "feed_z": 200.0,
+      "rpm_cap": 0.0
+    },
+    "finish_pocket": {
+      "allowance": 0.0,
+      "feed_xy": 420.0,
+      "feed_z": 200.0
+    },
+    "drill": {
+      "enabled": false,
+      "cycle": "G82",
+      "peck_depth": 0.0,
+      "rpm": 0.0,
+      "feed": 0.0
+    },
+    "deposition": {
+      "layer_height": 1.6,
+      "bead_width": 6.0,
+      "travel_speed": 320.0,
+      "wire_feed": 3800.0,
+      "arc_current": 240.0,
+      "arc_voltage": 26.0
+    },
+    "finish_pass": {
+      "layer_height": 1.0,
+      "bead_width": 4.5,
+      "travel_speed": 420.0,
+      "wire_feed": 2800.0,
+      "arc_current": 180.0,
+      "arc_voltage": 24.0
+    }
+  },
+  "tools": [
+    {
+      "name": "Torch_Primary",
+      "type": "deposition",
+      "diameter": 6.0,
+      "wire_feed_mm_min": 3800,
+      "travel_speed_mm_min": 320,
+      "arc_current_a": 240,
+      "arc_voltage_v": 26,
+      "shield_gas": "Ar/CO2 98/2",
+      "wire_material": "ER70S-6 1.2 mm",
+      "feed": 320,
+      "rpm": 0,
+      "ctwd_mm": 15,
+      "sensors": [
+        "arc_voltage",
+        "wire_feed_feedback"
+      ]
+    },
+    {
+      "name": "Torch_Finish",
+      "type": "finish",
+      "diameter": 4.5,
+      "wire_feed_mm_min": 2800,
+      "travel_speed_mm_min": 420,
+      "arc_current_a": 180,
+      "arc_voltage_v": 24,
+      "shield_gas": "Ar/CO2 98/2",
+      "wire_material": "ER70S-6 1.2 mm",
+      "feed": 420,
+      "rpm": 0,
+      "ctwd_mm": 14,
+      "sensors": [
+        "arc_voltage"
+      ]
+    },
+    {
+      "name": "Touch_Probe",
+      "type": "probe",
+      "diameter": 0.0,
+      "feed": 200,
+      "rpm": 0,
+      "purpose": "substrate height verification"
+    }
+  ],
+  "post": {
+    "dialect": "linuxcnc",
+    "emit_m6": false,
+    "emit_g43": false,
+    "emit_comments": true,
+    "line_numbers": false,
+    "torch_on": "M62 P0",
+    "torch_off": "M63 P0",
+    "gas_on": "M64 P1",
+    "gas_off": "M65 P1",
+    "wire_feed": "M68 E0 Q{wire_feed:.0f}",
+    "travel_speed": "F{travel_speed:.0f}",
+    "interpass_pause": "G4 P{interpass_dwell:.1f}",
+    "arc_start_delay_s": 0.4,
+    "arc_stop_delay_s": 0.2,
+    "gas_preflow_s": 1.0,
+    "gas_postflow_s": 2.0
+  },
+  "snippets": {
+    "rough_pocket": {
+      "header": [
+        "(===================================)",
+        "(WAAM DEPOSITION PASS {op_number})",
+        "(Tool: {tool_label})",
+        "(Region: {region_id})",
+        "(Layer height: {stepdown} mm, Nominal bead: {tool_diameter} mm)",
+        "(===================================)"
+      ],
+      "body": [
+        "G90",
+        "G54",
+        "{torch_off}",
+        "{gas_off}",
+        "G0 Z{clearance}",
+        "G0 X{start_x:.3f} Y{start_y:.3f}",
+        "{wire_feed_cmd}",
+        "{travel_speed_cmd}",
+        "{gas_on}",
+        "G4 P{gas_preflow:.1f}",
+        "{torch_on}",
+        "(TODO: insert deposition path for region {region_id})",
+        "{torch_off}",
+        "G4 P{gas_postflow:.1f}",
+        "{gas_off}",
+        "G0 Z{clearance}"
+      ],
+      "footer": [
+        "G4 P{interpass_dwell:.1f}"
+      ]
+    }
+  },
+  "validation": {
+    "required_fields": [
+      "layer_height",
+      "travel_speed",
+      "wire_feed",
+      "arc_current",
+      "arc_voltage"
+    ],
+    "thermal_limits": {
+      "check_interpass_temp": true,
+      "max_consecutive_layers": 10,
+      "forced_cooling_interval": 5
+    },
+    "geometry_checks": {
+      "min_wall_thickness_mm": 6.0,
+      "max_overhang_angle_deg": 45,
+      "min_feature_size_mm": 10.0
+    }
+  }
+}

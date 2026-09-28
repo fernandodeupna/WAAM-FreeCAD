@@ -1,0 +1,47 @@
+{
+  "part_key": "cube",
+  "part_label": "Cube",
+  "part_family": "bulk_fill",
+  "workspace_key": "cd309601d619",
+  "features_signature": "cd309601d619",
+  "status": "iterating",
+  "planner": "runtime_active",
+  "planner_module": "Waam_tech/experimental/runtime/parts/cube/cd309601d619/planner.py",
+  "planner_basis": "layer-by-layer material deposition",
+  "seed_source": "archive_same_part",
+  "seed_archive_path": "Waam_tech/experimental/runtime/archive/cube/20260421T094519Z",
+  "created_at": "2026-04-21T10:38:47Z",
+  "updated_at": "2026-04-21T11:01:24Z",
+  "artifacts": {
+    "experimental_nc": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline_experimental.nc",
+    "slice_plan": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/operations_mesh/waam_slice_plan.json",
+    "features": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/features/features.json"
+  },
+  "knowledge_paths": {
+    "lesson": "Waam_tech/experimental/knowledge/part-lessons/cube/cd309601d619/lesson.md",
+    "context": "Waam_tech/experimental/knowledge/part-lessons/cube/cd309601d619/context.json"
+  },
+  "promoted_lessons": [
+    "Waam_tech/experimental/knowledge/part-lessons/promoted/strategies/solid-section-contour-then-hatch.md",
+    "Waam_tech/experimental/knowledge/part-lessons/promoted/strategies/voided-section-hole-safe-fill.md"
+  ],
+  "related_lessons": [
+    "Waam_tech/experimental/knowledge/part-lessons/cube/20260421T094519Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/3dblock/20260421T103847Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260421T075622Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260410T094533Z/lesson.md"
+  ],
+  "recommended_reads": [
+    "Waam_tech/experimental/knowledge/part-lessons/cube/cd309601d619/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/cube/cd309601d619/context.json",
+    "Waam_tech/experimental/knowledge/part-lessons/promoted/strategies/solid-section-contour-then-hatch.md",
+    "Waam_tech/experimental/knowledge/part-lessons/promoted/strategies/voided-section-hole-safe-fill.md",
+    "Waam_tech/experimental/knowledge/part-lessons/cube/20260421T094519Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/3dblock/20260421T103847Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260421T075622Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260410T094533Z/lesson.md",
+    "Waam_tech/experimental/runtime/parts/cube/cd309601d619/planner.py",
+    "Waam_tech/experimental/runtime/parts/cube/cd309601d619/helpers.py"
+  ],
+  "next_goal": "Compare waam_baseline.nc and waam_baseline_experimental.nc, then refine `Waam_tech/experimental/runtime/parts/cube/cd309601d619/planner.py` for the next iteration."
+}

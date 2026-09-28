@@ -1,0 +1,10 @@
+{
+  "iteration": 1,
+  "syntax_ok": false,
+  "safety_ok": true,
+  "geometry_ok": true,
+  "messages": [
+    "Unsupported or unsafe command: %",
+    "Unsupported or unsafe command: %"
+  ]
+}

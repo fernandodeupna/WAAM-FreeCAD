@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Toolpath: Orange zigzag -->
+  <polyline points="10,45 20,35 30,45 40,35 50,45" fill="none" stroke="#EF6C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Torch: Grey nozzle -->
+  <rect x="26" y="4" width="12" height="24" rx="2" fill="#546E7A" stroke="#37474F" stroke-width="2"/>
+  <rect x="28" y="28" width="8" height="6" fill="#CFD8DC" stroke="#37474F" stroke-width="1"/>
+  
+  <!-- Spark: Yellow star/circle -->
+  <circle cx="32" cy="36" r="3" fill="#FFEB3B" />
+  
+  <!-- Viewer: Blue Magnifying Glass overlay on bottom right -->
+  <circle cx="46" cy="46" r="11" fill="none" stroke="#039BE5" stroke-width="3"/>
+  <line x1="54" y1="54" x2="60" y2="60" stroke="#039BE5" stroke-width="3" stroke-linecap="round"/>
+</svg>

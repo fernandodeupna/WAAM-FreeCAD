@@ -1,0 +1,9 @@
+{
+  "active_part_label": "SCC_908",
+  "active_part_key": "scc-908",
+  "active_part_family": "bulk_fill",
+  "active_part_family_signals": [],
+  "runtime_planner_path": "runtime/active/planner.py",
+  "status": "iterating",
+  "goal": "Preserve 4 holes and add material deposition in the base region in waam_baseline_experimental.nc"
+}

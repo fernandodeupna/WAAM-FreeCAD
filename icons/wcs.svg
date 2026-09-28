@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Origin Sphere -->
+  <circle cx="16" cy="48" r="6" fill="#ECEFF1" stroke="#37474F" stroke-width="2"/>
+  
+  <!-- Z Axis (Blue) -->
+  <line x1="16" y1="48" x2="16" y2="12" stroke="#2196F3" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="16,4 12,14 20,14" fill="#2196F3"/>
+  
+  <!-- X Axis (Red) -->
+  <line x1="16" y1="48" x2="52" y2="48" stroke="#F44336" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="60,48 50,44 50,52" fill="#F44336"/>
+
+  <!-- Y Axis (Green) - Perspective -->
+  <line x1="16" y1="48" x2="36" y2="28" stroke="#4CAF50" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="42,22 32,24 38,30" fill="#4CAF50"/>
+  
+  <!-- Axis Labels (Optional, keeping it clean for now) -->
+</svg>

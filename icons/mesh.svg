@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="meshGradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#E1F5FE"/>
+      <stop offset="100%" stop-color="#81D4FA"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Base Sphere -->
+  <circle cx="32" cy="32" r="26" fill="url(#meshGradient)" stroke="#0288D1" stroke-width="2"/>
+  
+  <!-- Triangular Mesh Wireframe -->
+  <path d="M32 6 L32 58" stroke="#0288D1" stroke-width="1"/>
+  <path d="M6 32 L58 32" stroke="#0288D1" stroke-width="1"/>
+  <path d="M14 14 L50 50" stroke="#0288D1" stroke-width="1"/>
+  <path d="M50 14 L14 50" stroke="#0288D1" stroke-width="1"/>
+  <path d="M32 6 L50 14" stroke="#0288D1" stroke-width="1" fill="none"/>
+  <path d="M50 14 L58 32" stroke="#0288D1" stroke-width="1" fill="none"/>
+  <path d="M58 32 L50 50" stroke="#0288D1" stroke-width="1" fill="none"/>
+  <path d="M50 50 L32 58" stroke="#0288D1" stroke-width="1" fill="none"/>
+  <path d="M32 58 L14 50" stroke="#0288D1" stroke-width="1" fill="none"/>
+  <path d="M14 50 L6 32" stroke="#0288D1" stroke-width="1" fill="none"/>
+  <path d="M6 32 L14 14" stroke="#0288D1" stroke-width="1" fill="none"/>
+  <path d="M14 14 L32 6" stroke="#0288D1" stroke-width="1" fill="none"/>
+</svg>

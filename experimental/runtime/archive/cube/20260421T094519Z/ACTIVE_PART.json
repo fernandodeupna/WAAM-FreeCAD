@@ -1,0 +1,12 @@
+{
+  "active_part_label": "Cube",
+  "active_part_key": "cube",
+  "active_part_family": "bulk_fill",
+  "active_part_family_signals": [],
+  "workspace_key": "eab8c2fa935f",
+  "runtime_workspace_path": "runtime/parts/cube/eab8c2fa935f",
+  "runtime_planner_path": "runtime/parts/cube/eab8c2fa935f/planner.py",
+  "active_planner_mirror": "runtime/active/planner.py",
+  "status": "iterating",
+  "goal": "Create the next part-specific experimental improvement from the selected per-part runtime workspace."
+}

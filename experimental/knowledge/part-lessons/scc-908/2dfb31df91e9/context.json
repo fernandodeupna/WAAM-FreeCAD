@@ -1,0 +1,41 @@
+{
+  "part_key": "scc-908",
+  "part_label": "SCC_908",
+  "part_family": "bulk_fill",
+  "workspace_key": "2dfb31df91e9",
+  "features_signature": "2dfb31df91e9",
+  "status": "iterating",
+  "planner": "runtime_active",
+  "planner_module": "Waam_tech/experimental/runtime/parts/scc-908/2dfb31df91e9/planner.py",
+  "planner_basis": "layer-by-layer material deposition",
+  "seed_source": "archive_exact_signature",
+  "seed_archive_path": "Waam_tech/experimental/runtime/archive/scc-908/20260409T100238Z",
+  "created_at": "2026-04-09T10:53:11Z",
+  "updated_at": "2026-04-09T10:53:11Z",
+  "artifacts": {
+    "experimental_nc": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline_experimental.nc",
+    "slice_plan": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/operations_mesh/waam_slice_plan.json",
+    "features": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/features/features.json"
+  },
+  "knowledge_paths": {
+    "lesson": "Waam_tech/experimental/knowledge/part-lessons/scc-908/2dfb31df91e9/lesson.md",
+    "context": "Waam_tech/experimental/knowledge/part-lessons/scc-908/2dfb31df91e9/context.json"
+  },
+  "related_lessons": [
+    "Waam_tech/experimental/knowledge/part-lessons/scc-908/20260409T100238Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/scc-908/20260408T130216Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/scc-908/20260408T115842Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260409T105311Z/lesson.md"
+  ],
+  "recommended_reads": [
+    "Waam_tech/experimental/knowledge/part-lessons/scc-908/2dfb31df91e9/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/scc-908/2dfb31df91e9/context.json",
+    "Waam_tech/experimental/knowledge/part-lessons/scc-908/20260409T100238Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/scc-908/20260408T130216Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/scc-908/20260408T115842Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260409T105311Z/lesson.md",
+    "Waam_tech/experimental/runtime/parts/scc-908/2dfb31df91e9/planner.py",
+    "Waam_tech/experimental/runtime/parts/scc-908/2dfb31df91e9/helpers.py"
+  ],
+  "next_goal": "Compare waam_baseline.nc and waam_baseline_experimental.nc, then refine `Waam_tech/experimental/runtime/parts/scc-908/2dfb31df91e9/planner.py` for the next iteration."
+}

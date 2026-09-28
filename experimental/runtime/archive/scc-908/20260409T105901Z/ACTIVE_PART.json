@@ -1,0 +1,12 @@
+{
+  "active_part_label": "SCC_908",
+  "active_part_key": "scc-908",
+  "active_part_family": "bulk_fill",
+  "active_part_family_signals": [],
+  "workspace_key": "2dfb31df91e9",
+  "runtime_workspace_path": "runtime/parts/scc-908/2dfb31df91e9",
+  "runtime_planner_path": "runtime/parts/scc-908/2dfb31df91e9/planner.py",
+  "active_planner_mirror": "runtime/active/planner.py",
+  "status": "iterating",
+  "goal": "Create the next part-specific experimental improvement from the selected per-part runtime workspace."
+}

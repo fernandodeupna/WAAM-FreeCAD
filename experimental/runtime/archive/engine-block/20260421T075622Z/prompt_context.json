@@ -1,0 +1,111 @@
+{
+  "active_part": {
+    "active_part_label": "Engine_block",
+    "active_part_key": "engine-block",
+    "active_part_family": "bulk_fill",
+    "active_part_family_signals": [],
+    "workspace_key": "f6aee62660e3",
+    "runtime_workspace_path": "runtime/parts/engine-block/f6aee62660e3",
+    "runtime_planner_path": "runtime/parts/engine-block/f6aee62660e3/planner.py",
+    "active_planner_mirror": "runtime/active/planner.py",
+    "status": "iterating",
+    "goal": "Create the next part-specific experimental improvement from the selected per-part runtime workspace."
+  },
+  "part_label": "Engine_block",
+  "part_key": "engine-block",
+  "part_family": "bulk_fill",
+  "part_family_signals": [],
+  "planner_basis": "layer-by-layer material deposition",
+  "allowed_edit_root": "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/",
+  "allowed_files": [
+    "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/planner.py",
+    "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/helpers.py",
+    "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/notes.md",
+    "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/manifest.json",
+    "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/prompt_context.json"
+  ],
+  "artifacts": {
+    "step_path": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/input_step/step_files/block.step",
+    "features_path": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/features/features.json",
+    "plan_path": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/operations_mesh/waam_slice_plan.json",
+    "baseline_nc_path": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline.nc",
+    "experimental_nc_path": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline_experimental.nc"
+  },
+  "workspace_runtime_files": {
+    "workspace_root": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3",
+    "planner": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/planner.py",
+    "helpers": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/helpers.py",
+    "manifest": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/manifest.json",
+    "notes": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/notes.md"
+  },
+  "active_runtime_mirror_files": {
+    "planner": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/active/planner.py",
+    "helpers": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/active/helpers.py",
+    "manifest": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/active/manifest.json",
+    "notes": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/active/notes.md",
+    "prompt_context": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/experimental/runtime/active/prompt_context.json"
+  },
+  "knowledge_lessons": {
+    "current_lesson": "Waam_tech/experimental/knowledge/part-lessons/engine-block/f6aee62660e3/lesson.md",
+    "current_context": "Waam_tech/experimental/knowledge/part-lessons/engine-block/f6aee62660e3/context.json",
+    "promoted_lessons": [
+      "Waam_tech/experimental/knowledge/part-lessons/promoted/strategies/solid-section-contour-then-hatch.md",
+      "Waam_tech/experimental/knowledge/part-lessons/promoted/strategies/voided-section-hole-safe-fill.md"
+    ],
+    "relevant_archived_lessons": [
+      "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260410T094533Z/lesson.md",
+      "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260409T130925Z/lesson.md",
+      "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260409T130310Z/lesson.md",
+      "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260409T105311Z/lesson.md"
+    ]
+  },
+  "recommended_reads": [
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/f6aee62660e3/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/f6aee62660e3/context.json",
+    "Waam_tech/experimental/knowledge/part-lessons/promoted/strategies/solid-section-contour-then-hatch.md",
+    "Waam_tech/experimental/knowledge/part-lessons/promoted/strategies/voided-section-hole-safe-fill.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260410T094533Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260409T130925Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260409T130310Z/lesson.md",
+    "Waam_tech/experimental/knowledge/part-lessons/engine-block/20260409T105311Z/lesson.md",
+    "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/planner.py",
+    "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/helpers.py",
+    "Waam_tech/experimental/ACTIVE_PART.json"
+  ],
+  "manifest": {
+    "part_key": "engine-block",
+    "part_label": "Engine_block",
+    "part_family": "bulk_fill",
+    "part_family_signals": [],
+    "status": "iterating",
+    "iteration": 1,
+    "workspace_key": "f6aee62660e3",
+    "runtime_workspace_path": "runtime/parts/engine-block/f6aee62660e3",
+    "planner_basis": "layer-by-layer material deposition",
+    "active_planner": "runtime/active/planner.py",
+    "active_planner_mirror": "runtime/active/planner.py",
+    "runtime_planner_path": "runtime/parts/engine-block/f6aee62660e3/planner.py",
+    "planner_module": "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/planner.py",
+    "source_step": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/input_step/step_files/block.step",
+    "features_path": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/features/features.json",
+    "features_signature": "f6aee62660e3",
+    "plan_path": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/operations_mesh/waam_slice_plan.json",
+    "baseline_nc": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline.nc",
+    "experimental_nc": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline_experimental.nc",
+    "allowed_files": [
+      "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/planner.py",
+      "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/helpers.py",
+      "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/notes.md",
+      "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/manifest.json",
+      "Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/prompt_context.json"
+    ],
+    "goal": "Create the next part-specific experimental improvement from the selected per-part runtime workspace.",
+    "seed_source": "archive_same_part",
+    "seed_archive_path": "Waam_tech/experimental/runtime/archive/engine-block/20260409T130310Z",
+    "last_review_input": "",
+    "run_id": "20260410t094634z",
+    "created_at": "2026-04-09T13:08:23Z",
+    "updated_at": "2026-04-10T09:46:34Z"
+  },
+  "next_goal": "Edit `Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/planner.py` and `Waam_tech/experimental/runtime/parts/engine-block/f6aee62660e3/helpers.py` for this part-specific iteration, then rerun FreeCAD."
+}

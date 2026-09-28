@@ -1,0 +1,37 @@
+{
+  "part_key": "pieza2",
+  "part_label": "Pieza2",
+  "part_family": "bulk_fill",
+  "workspace_key": "20260409T130823Z",
+  "features_signature": "1a00c4a9063d",
+  "status": "archived",
+  "planner": "runtime_archive",
+  "planner_module": "Waam_tech/experimental/runtime/archive/pieza2/20260409T130823Z/planner.py",
+  "planner_basis": "layer-by-layer material deposition",
+  "seed_source": "archive_exact_signature",
+  "seed_archive_path": "Waam_tech/experimental/runtime/archive/pieza2/20260409T130823Z",
+  "created_at": "2026-04-09T10:59:01Z",
+  "updated_at": "2026-04-09T13:03:10Z",
+  "artifacts": {
+    "experimental_nc": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline_experimental.nc",
+    "baseline_nc": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline.nc",
+    "slice_plan": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/operations_mesh/waam_slice_plan.json",
+    "features": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/features/features.json"
+  },
+  "knowledge_paths": {
+    "lesson": "Waam_tech/experimental/knowledge/part-lessons/pieza2/20260409T130823Z/lesson.md",
+    "context": "Waam_tech/experimental/knowledge/part-lessons/pieza2/20260409T130823Z/context.json"
+  },
+  "archive_paths": {
+    "archive_dir": "Waam_tech/experimental/runtime/archive/pieza2/20260409T130823Z",
+    "notes": "Waam_tech/experimental/runtime/archive/pieza2/20260409T130823Z/notes.md",
+    "planner": "Waam_tech/experimental/runtime/archive/pieza2/20260409T130823Z/planner.py",
+    "helpers": "Waam_tech/experimental/runtime/archive/pieza2/20260409T130823Z/helpers.py"
+  },
+  "related_lessons": [],
+  "recommended_reads": [
+    "Waam_tech/experimental/knowledge/part-lessons/pieza2/20260409T130823Z/lesson.md",
+    "Waam_tech/experimental/runtime/archive/pieza2/20260409T130823Z/notes.md"
+  ],
+  "next_goal": "Use this archived lesson as reference for future part-specific prompt iterations."
+}

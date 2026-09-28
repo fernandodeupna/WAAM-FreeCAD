@@ -1,0 +1,37 @@
+{
+  "part_key": "3dblock",
+  "part_label": "3dblock",
+  "part_family": "bulk_fill",
+  "workspace_key": "20260421T103847Z",
+  "features_signature": "manual-3dblock",
+  "status": "archived",
+  "planner": "runtime_archive",
+  "planner_module": "Waam_tech/experimental/runtime/archive/3dblock/20260421T103847Z/planner.py",
+  "planner_basis": "layer-by-layer material deposition",
+  "seed_source": "manual_override",
+  "seed_archive_path": "Waam_tech/experimental/runtime/archive/3dblock/20260421T103847Z",
+  "created_at": "2026-04-21T09:57:00Z",
+  "updated_at": "2026-04-21T09:57:00Z",
+  "artifacts": {
+    "experimental_nc": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline_experimental.nc",
+    "baseline_nc": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/nc_files/waam_baseline.nc",
+    "slice_plan": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/operations_mesh/waam_slice_plan.json",
+    "features": "/Users/sustian/Library/Preferences/FreeCAD/Mod/WAAM/Waam_tech/output/features/features.json"
+  },
+  "knowledge_paths": {
+    "lesson": "Waam_tech/experimental/knowledge/part-lessons/3dblock/20260421T103847Z/lesson.md",
+    "context": "Waam_tech/experimental/knowledge/part-lessons/3dblock/20260421T103847Z/context.json"
+  },
+  "archive_paths": {
+    "archive_dir": "Waam_tech/experimental/runtime/archive/3dblock/20260421T103847Z",
+    "notes": "Waam_tech/experimental/runtime/archive/3dblock/20260421T103847Z/notes.md",
+    "planner": "Waam_tech/experimental/runtime/archive/3dblock/20260421T103847Z/planner.py",
+    "helpers": "Waam_tech/experimental/runtime/archive/3dblock/20260421T103847Z/helpers.py"
+  },
+  "related_lessons": [],
+  "recommended_reads": [
+    "Waam_tech/experimental/knowledge/part-lessons/3dblock/20260421T103847Z/lesson.md",
+    "Waam_tech/experimental/runtime/archive/3dblock/20260421T103847Z/notes.md"
+  ],
+  "next_goal": "Use this archived lesson as reference for future part-specific prompt iterations."
+}

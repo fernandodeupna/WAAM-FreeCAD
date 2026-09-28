@@ -1,0 +1,12 @@
+{
+  "active_part_label": "Engine_block",
+  "active_part_key": "engine-block",
+  "active_part_family": "bulk_fill",
+  "active_part_family_signals": [],
+  "workspace_key": "f6aee62660e3",
+  "runtime_workspace_path": "runtime/parts/engine-block/f6aee62660e3",
+  "runtime_planner_path": "runtime/parts/engine-block/f6aee62660e3/planner.py",
+  "active_planner_mirror": "runtime/active/planner.py",
+  "status": "iterating",
+  "goal": "Create the next part-specific experimental improvement from the selected per-part runtime workspace."
+}

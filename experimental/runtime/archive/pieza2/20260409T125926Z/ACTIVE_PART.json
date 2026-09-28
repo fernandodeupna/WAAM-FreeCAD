@@ -1,0 +1,12 @@
+{
+  "active_part_label": "Pieza2",
+  "active_part_key": "pieza2",
+  "active_part_family": "bulk_fill",
+  "active_part_family_signals": [],
+  "workspace_key": "1a00c4a9063d",
+  "runtime_workspace_path": "runtime/parts/pieza2/1a00c4a9063d",
+  "runtime_planner_path": "runtime/parts/pieza2/1a00c4a9063d/planner.py",
+  "active_planner_mirror": "runtime/active/planner.py",
+  "status": "iterating",
+  "goal": "Create the next part-specific experimental improvement from the selected per-part runtime workspace."
+}

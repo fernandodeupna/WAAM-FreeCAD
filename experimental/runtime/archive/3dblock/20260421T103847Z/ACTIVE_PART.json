@@ -1,0 +1,12 @@
+{
+  "active_part_label": "3dblock",
+  "active_part_key": "3dblock",
+  "active_part_family": "bulk_fill",
+  "active_part_family_signals": [],
+  "workspace_key": "manual-3dblock",
+  "runtime_workspace_path": "runtime/active",
+  "runtime_planner_path": "runtime/active/planner.py",
+  "active_planner_mirror": "runtime/active/planner.py",
+  "status": "iterating",
+  "goal": "Generate 3dblock.step experimental NC without outer contour, using continuous serpentine zig-zag fill."
+}
